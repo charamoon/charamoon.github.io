@@ -1,0 +1,23 @@
+from random import randint
+random_num = randint(1, 15)
+count = 1
+print('Я загадала число, твоя задача его угадать\n'
+      'число от 1 до 15\n'
+      'удачи!')
+while True :
+    if int(input('Введи число')) == random_num:
+        print('урааа, ты угадал!!!\n количество попыток: ',count)
+        break
+    else:
+        print('неправильно, попробуй ещё раз')
+        count += 1
+    if 4 < count < 7 and random_num < 7:
+        print('даю подсказку\n'
+         'загадонное число меньше 7')
+    elif 4 < count < 7 and random_num > 7:
+        print(' даю подсказку\n'
+         'загадонное число больше 7')
+    elif count > 7:
+        print('загадонное число =', random_num)
+        print('ты проиграл')
+        break
