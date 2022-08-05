@@ -62,3 +62,13 @@ plt.subplot(133)
 plt.plot(names, values)
 plt.suptitle('Categorical Plotting')
 plt.show()
+
+
+
+x = ['class_1', 'class_2', 'class_3']
+y1 = [136,87,119]
+y2 = [80,97,372]
+  
+plt.bar(x,y1,color='r')
+plt.bar(x,y2,bottom=y1,color='b')
+plt.show()
