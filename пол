@@ -1,0 +1,8 @@
+from sklearn.linear_model import LogisticRegression
+lr = LogisticRegression()
+
+lr.fit(data[['height', 'weight']], data['sex'])
+
+lr.predict([[170, 55]]) 1-Ж 0-м
+
+lr.predict_proba([[170, 55]]) 1-м 2-ж
