@@ -1,0 +1,7 @@
+lr.predict([[170]])
+
+
+data['predicted'] = lr.predict(data[['height']])
+fig, ax = plt.subplots(figsize=(3,2))
+data.sort_values(by="height").plot.line(ax=ax, x="height", y="weight", style='o')
+data.sort_values(by="height").plot.line(ax=ax, x="height", y="predicted")
